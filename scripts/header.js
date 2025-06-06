@@ -6,9 +6,9 @@ const links = [
     { href: "./about.html", text: "About the site" },
 ];
 
-// const header = document.createElement("header");
-// const nav = document.createElement("nav");
-// const ul = document.createElement("ul");
+const header = document.createElement("header");
+const nav = document.createElement("nav");
+const ul = document.createElement("ul");
 
 header.classList.add("header");
 nav.classList.add("nav");
