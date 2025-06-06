@@ -1,0 +1,24 @@
+{
+    "name": "stptdn.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/stptdn/stptdn.github.io#readme",
+    "bugs": {
+        "url": "https://github.com/stptdn/stptdn.github.io/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stptdn/stptdn.github.io.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    },
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.8",
+        "tailwindcss": "^4.1.8"
+    }
+}
