@@ -10,9 +10,9 @@ const header = document.createElement("header");
 const nav = document.createElement("nav");
 const ul = document.createElement("ul");
 
-// header.classList.add("header");
+header.classList.add("flex", "items-center", "h-12");
 // nav.classList.add("nav");
-// ul.classList.add("nav-list");
+ul.classList.add("flex", "gap-8", "mx-8");
 
 links.forEach((link) => {
     const li = document.createElement("li");
