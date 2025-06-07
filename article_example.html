@@ -6,16 +6,16 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Article</title>
   </head>
-  <body class="bg-gray-50">
+  <body>
     <script src="./scripts/header.js"></script>
-    <div class="relative flex flex-row">
+    <div class="flex flex-row">
       <main
-        class="mx-[calc((100vw-48rem)/2)] min-h-[calc(100vh-6rem)] w-3xl flex-none px-6 py-10 max-md:mx-0"
+        class="ml-[calc((100vw-48rem)/2)] min-h-[calc(100vh-2.5rem)] w-3xl flex-none px-6 pt-14 max-md:mx-0"
       >
-        <article class="prose prose-sky">
+        <article class="prose prose-a:no-underline">
           <header>
-            <h1>Article's title</h1>
-            <time datetime="2025-06-06">06/06/2025</time>
+            <h1>Пример статьи</h1>
+            <time datetime="2025-06-06" class="text-sm">06/06/2025</time>
           </header>
           <section>
             <p>
@@ -41,8 +41,14 @@
               reprehenderit tempor proident nisi proident cupidatat dolore non
               cupidatat.
             </p>
-            <h2 id="#first">
-              <a href="#first">firts</a>
+            <h2 id="1" class="group scroll-mt-14">
+              <a href="#1"
+                >Секция 1
+                <span
+                  class="font-medium underline opacity-0 group-hover:opacity-100"
+                  >#</span
+                >
+              </a>
             </h2>
             <p>
               Exercitation fugiat nulla aliqua nulla sit pariatur ipsum tempor
@@ -84,9 +90,24 @@
               nostrud sunt ullamco. Voluptate aliqua aliquip esse quis nulla
               occaecat in ullamco.
             </p>
-            <h2 id="#second">
-              <a href="#second">second</a>
+            <h2 id="2" class="group scroll-mt-14">
+              <a href="#2"
+                >Секция 2
+                <span
+                  class="font-medium underline opacity-0 group-hover:opacity-100"
+                  >#</span
+                ></a
+              >
             </h2>
+            <h3 id="2.1" class="group scroll-mt-14">
+              <a href="#2.1"
+                >Секция 2.1
+                <span
+                  class="font-medium underline opacity-0 group-hover:opacity-100"
+                  >#</span
+                ></a
+              >
+            </h3>
             <p>
               Enim eu voluptate consectetur laboris consequat magna aliquip est
               duis ea eiusmod consequat do excepteur proident. Et ullamco sint
@@ -99,7 +120,15 @@
               Sunt do elit laboris pariatur laboris cillum ea magna cillum enim
               reprehenderit cillum.
             </p>
-            <h3 id="#third"><a href="#third">third</a></h3>
+            <h3 id="2.2" class="group scroll-mt-14">
+              <a href="#2.2"
+                >Секция 2.2
+                <span
+                  class="font-medium underline opacity-0 group-hover:opacity-100"
+                  >#</span
+                ></a
+              >
+            </h3>
             <p>
               Ut non anim cupidatat ex. Id laborum dolore labore minim proident
               enim. Mollit veniam nostrud voluptate nisi ut sunt nostrud
@@ -120,11 +149,11 @@
         </article>
       </main>
 
-      <div class="flex w-full justify-end align-middle">
+      <div class="flex w-full justify-end">
         <aside
-          class="sticky top-16 flex max-h-[calc(100vh-8rem)] w-64 flex-col overflow-y-auto max-xl:hidden"
+          class="sticky top-16 flex max-h-[calc(100vh-15.75rem)] w-64 flex-col overflow-y-auto max-xl:hidden"
         >
-          <header class="sticky top-0 border-gray-100 bg-gray-50 pb-3">
+          <header class="sticky top-0">
             <h1 class="text-lg font-semibold">Contents</h1>
           </header>
           <ul
@@ -133,324 +162,39 @@
             <li class="-ml-px flex flex-col items-start gap-2">
               <a
                 href="#"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >(top) pl-8
+                class="inline-block border-l border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                >(top)
               </a>
             </li>
-            <li class="-ml-px">
+            <li class="-ml-px flex flex-col items-start gap-2">
               <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
+                href="#1"
+                class="inline-block border-l border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                >1</a
               >
             </li>
-            <li class="-ml-px">
+            <li class="-ml-px flex flex-col items-start gap-2">
               <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
+                href="#2"
+                class="inline-block border-l border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                >2</a
               >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#third"
-                class="inline-block border-l border-transparent pl-8 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >third</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#first"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >first</a
-              >
-            </li>
-            <li class="-ml-px">
-              <a
-                href="#second"
-                class="inline-block border-l border-transparent pl-4 text-base/8 text-gray-600 hover:border-gray-950/25 hover:text-gray-950 aria-[current]:border-gray-950 aria-[current]:font-semibold aria-[current]:text-gray-950 sm:text-sm/6"
-                >second</a
-              >
+              <ul class="flex flex-col gap-2 border-l border-transparent">
+                <li class="-ml-px flex flex-col items-start gap-2">
+                  <a
+                    href="#2.1"
+                    class="inline-block border-l border-transparent pl-8 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                    >2.1 pl-8</a
+                  >
+                </li>
+                <li class="-ml-px flex flex-col items-start gap-2">
+                  <a
+                    href="#2.2"
+                    class="inline-block border-l border-transparent pl-8 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                    >2.2 pl-8</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </aside>
