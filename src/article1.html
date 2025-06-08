@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>Пример статьи</title>
   </head>
-  <body>
+  <body class="bg-background-950">
     <script src="./scripts/header.js"></script>
     <article
       class="grid min-h-[calc(100vh-2.5rem)] grid-cols-1 grid-rows-[auto_1fr] pb-6 md:grid-cols-[calc((100vw-48rem)/2)_48rem_16rem]"
@@ -38,7 +38,7 @@
       <aside
         class="sticky top-14 flex max-h-[calc(100lvh-2.5rem)] flex-col max-xl:hidden"
       >
-        <header class="sticky top-0">
+        <header class="bg-background-950 sticky top-0">
           <h1 class="text-lg font-semibold">Contents</h1>
         </header>
         <div class="relative overflow-y-auto pb-12">
@@ -55,7 +55,7 @@
           </ul>
         </div>
         <div
-          class="pointer-events-none absolute bottom-0 left-0 z-10 h-12 w-full bg-gradient-to-t from-white to-transparent"
+          class="from-background-950 pointer-events-none absolute bottom-0 left-0 z-10 h-12 w-full bg-gradient-to-t to-transparent"
         ></div>
       </aside>
     </article>

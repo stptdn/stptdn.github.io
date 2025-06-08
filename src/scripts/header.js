@@ -16,15 +16,16 @@ const ul = document.createElement("ul");
 
 header.classList.add(
   "flex",
-  "items-center",
+  "inset-x-0",
   "h-14",
+  "bg-background-950",
   "fixed",
-
-  "w-full",
-  "prose-a:hover:underline",
+  "items-center",
   "justify-center",
+  "prose-a:hover:underline",
+  "z-20",
 );
-nav.classList.add("w-full", "max-w-3xl", "px-6");
+nav.classList.add("w-3xl", "max-w-3xl", "px-6");
 ul.classList.add("flex", "justify-between", "sm:justify-around");
 
 links.forEach((link) => {
