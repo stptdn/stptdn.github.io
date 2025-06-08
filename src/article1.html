@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./css/output.css" rel="stylesheet" />
     <title>Пример статьи</title>
   </head>
   <body>
     <script src="./scripts/header.js"></script>
     <article
-      class="grid min-h-[calc(100vh-2.5rem)] grid-cols-1 grid-rows-[auto_1fr] md:grid-cols-[calc((100vw-48rem)/2)_48rem_16rem]"
+      class="grid min-h-[calc(100vh-2.5rem)] grid-cols-1 grid-rows-[auto_1fr] pb-6 md:grid-cols-[calc((100vw-48rem)/2)_48rem_16rem]"
     >
       <header class="prose max-w-none px-6 pt-14 md:col-start-2">
         <h1>Пример статьи</h1>
         <time datetime="2025-06-06" class="text-sm">06/06/2025</time>
       </header>
       <main class="px-6 md:col-start-2">
-        <section class="prose max-w-none prose-a:no-underline">
-          <p class="mt-5 block">
+        <section class="prose prose-a:no-underline max-w-none">
+          <p class="mt-5">
             Voluptate do mollit est sint. Elit est in elit ut aliquip eu. Eu
             aliquip ut proident ut minim ipsum velit ad do. Duis cillum id id
             veniam qui proident veniam. Labore quis irure irure ipsum Lorem
@@ -26,7 +26,7 @@
             elit cillum non laboris enim consequat qui qui ut magna.
           </p>
 
-          <p class="block">
+          <p>
             Dolore dolor commodo duis aute enim nostrud pariatur laborum
             pariatur veniam consequat nostrud ut. Veniam enim ex in adipisicing
             dolore. Ullamco irure aliqua in ipsum incididunt sint elit amet esse
@@ -36,54 +36,27 @@
       </main>
 
       <aside
-        class="sticky top-14 flex max-h-[calc(100vh-15.75rem)] flex-col overflow-y-auto max-xl:hidden"
+        class="sticky top-14 flex max-h-[calc(100lvh-2.5rem)] flex-col max-xl:hidden"
       >
         <header class="sticky top-0">
           <h1 class="text-lg font-semibold">Contents</h1>
         </header>
-        <ul
-          class="flex flex-col gap-1 border-l-2 border-[color-mix(in_oklab,_var(--color-gray-950),white_90%)]"
-        >
-          <li class="-ml-0.5 flex flex-col items-start gap-1">
-            <a
-              href="#"
-              class="inline-block w-full border-l-2 border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
-              >(Top)
-            </a>
-          </li>
-          <li class="-ml-0.5 flex flex-col items-start gap-1">
-            <a
-              href="#1"
-              class="inline-block w-full border-l-2 border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
-              >1</a
-            >
-          </li>
-          <li class="-ml-0.5 flex flex-col items-start gap-1">
-            <a
-              href="#2"
-              class="inline-block w-full border-l-2 border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
-              >2</a
-            >
-            <ul
-              class="flex w-full flex-col gap-1 border-l-2 border-transparent"
-            >
-              <li class="-ml-0.5 flex flex-col items-start gap-1">
-                <a
-                  href="#2.1"
-                  class="inline-block w-full border-l-2 border-transparent pl-6 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
-                  >2.1 pl-6</a
-                >
-              </li>
-              <li class="-ml-0.5 flex flex-col items-start gap-1">
-                <a
-                  href="#2.2"
-                  class="inline-block w-full border-l-2 border-transparent pl-6 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
-                  >2.2 pl-6</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="relative overflow-y-auto pb-12">
+          <ul
+            class="flex flex-col gap-1 border-l-2 border-[color-mix(in_oklab,_var(--color-gray-950),white_90%)]"
+          >
+            <li class="-ml-0.5 flex flex-col items-start gap-1">
+              <a
+                href="#"
+                class="w-full border-l-2 border-transparent pl-4 text-sm/6 text-gray-600 hover:border-gray-950/25 hover:text-gray-950"
+                >(Top)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="pointer-events-none absolute bottom-0 left-0 z-10 h-12 w-full bg-gradient-to-t from-white to-transparent"
+        ></div>
       </aside>
     </article>
     <script src="./scripts/footer.js"></script>
